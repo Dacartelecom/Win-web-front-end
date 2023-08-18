@@ -1,0 +1,144 @@
+/*-----------------Formulario---------*/
+
+.form-desktop{
+  position: absolute;
+  top: 25%; /* arriba ----- abajo*/
+  right: 0;
+  border-radius: 50% 0 0 50%;
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center; 
+  color: #FF5A0A;
+}
+.form-mobile{
+  background: white;
+  color: #FF5A0A;
+
+}
+.background-form{
+  position: relative;
+  background: white;
+  display: block;
+  padding: .5rem;
+  width: 28rem;
+  height: 16rem;
+  max-width: 40rem;
+  border-radius: 8em 0 0 8em;
+
+}
+.padding{
+  width: 70%;
+  margin: 3em auto; /*arriba y abajo texto*/
+  justify-content: center;
+  
+}
+
+.sub-text{
+  font-size: 20px;
+  color: #301D19;
+}
+
+.padding input{
+  height: 2em;
+  width: 25em;
+  margin: 10px auto; 
+}
+.form-mobile{
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas */
+  .form-desktop{
+    display: none;
+  }
+  .form-mobile{
+    display: block;
+    width: 100%;
+    height: 7em;
+    margin: -.4em auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .form-container{
+    text-align: center;
+    
+  }
+  .form-container input{
+    border-radius: 10px;
+    border: 3px solid #FF5A0A;
+  }
+
+}
+
+
+
+@media (min-width: 1601px) {
+  /* Estilos para pantallas grandes */
+  .form-desktop{
+    position: absolute;
+    top: 25%; /* arriba ----- abajo*/
+    right: 0;
+    border-radius: 50% 0 0 50%;
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .background-form{
+    position: relative;
+    display: block;
+    padding: .1rem;
+    width: 26rem;
+    height: 16rem;
+    max-width: 27rem;
+    border-radius: 8em 0 0 8em;
+  
+  }
+  .padding{
+    width: 70%;
+    margin: 3em auto; /*arriba y abajo texto*/
+    text-align: left;
+    justify-content: center;
+  }
+  .sub-text{
+    
+  }
+  .padding {
+    font-family: 'MADEtomyBold';
+
+  }
+  
+  .padding input{
+    height: 2em;
+    width: 25em;
+    margin: 10px auto; 
+    border-radius: 10px;
+    border: 3px solid #FF5A0A;
+  }
+
+}
+
+@media (max-width: 1501px) {
+  .form-desktop{
+    top: 22%;
+  }
+  .background-form{
+    width: 14rem;
+    height: 10rem;
+  }
+  .padding{
+  margin: 2em auto;
+  }
+
+
+  .padding input{
+    height: 1em;
+    width: 13em;
+    border-radius: 10px;
+    border: 3px solid #FF5A0A;
+  }
+
+}

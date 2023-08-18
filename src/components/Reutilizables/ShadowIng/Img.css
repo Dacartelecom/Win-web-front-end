@@ -1,0 +1,75 @@
+/********************** Componente Imagen *******************/
+.imagen-container{
+  font-family: 'MADEtomyBold';
+}
+@media (min-width: 1601px) {
+
+  .text-plan{
+    font-size: 2em;
+    bottom: 4%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+  }
+  
+  }
+  
+  
+  
+  @media (max-width: 1501px) {
+    .text-plan{
+      font-size: 1.7em;
+      bottom: 2%;
+      left: 28%;
+      transform: translate(-50%, -50%);
+  
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .text-plan{
+      font-size: 1.7em;
+      bottom: 4%;
+      left: 28%;
+    }
+  }
+  /************* animaciones *************/
+  .text-plan{
+    position: absolute;
+  
+    color: white;
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Empieza transparente */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  .imagen-container{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  
+  }
+  
+  .imagen-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  
+  }
+  .imagen-container:hover .overlay {
+    background-color: rgba(255, 60, 0, 0.062); /* Cambia a un color oscuro al pasar el mouse */
+  }
+  .imagen-container:hover .text-plan{
+    opacity: 1;
+  }
+  
+  

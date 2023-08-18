@@ -1,0 +1,75 @@
+
+.header-win{
+  background: white;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  font-size: 1.7rem;
+
+}
+
+.logo{
+  margin: auto 10%;
+}
+
+.logo img{
+  width: 8rem;
+}
+
+.text-header{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.text-win{
+  margin: auto 10%;
+}
+
+.text-number{
+  width: 20rem;
+  height: 100%;
+  background: #FF5A0A;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  font-family: 'MADEtomyBold';
+
+}
+
+.text-number a{
+  text-decoration: none;
+  color: white;
+}
+
+.text-number:hover{
+  background: rgb(145, 2, 2);
+}
+@media (max-width: 768px) {
+  .header-win{
+    width: 100%;
+    display: block;
+    height: 15rem;
+  }
+  .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .logo img{
+    width: 40%;
+    margin: 10px auto;
+  }
+  .text-header{
+    height: 40%;
+    
+  }
+  .container-img img{
+    margin: 0;
+  }
+}
